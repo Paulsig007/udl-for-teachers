@@ -1,0 +1,19 @@
+@import "../../constants/theme.css";
+
+/* ===Jumbotron=== */
+.slideContainer {
+  background-color: var(--jumboBG);
+  border: 1px solid black;
+  display: flex;
+}
+
+.jumbotronTitle {
+  padding-top: 5rem;
+  text-align: center;
+}
+
+/* ===Slide1=== */
+
+/* ===Slide2=== */
+
+/* ===Slide3=== */
