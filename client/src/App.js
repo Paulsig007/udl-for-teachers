@@ -13,9 +13,12 @@ import Col from "react-bootstrap/Col";
 
 // pages
 import Home from "./pages/home/home/Home";
+import About from "./pages/home/about/About";
+import Contact from "./pages/home/contact/Contact";
+import AdditionalReading from "./pages/home/additionalReading/AdditionalReading";
 
 // components
-import Jumbotron from "./components/jumbotron/Jumbotron";
+import Nav from "./components/nav/Nav";
 
 // create our main graphql endpoint
 const httpLink = createHttpLink({
@@ -35,26 +38,29 @@ function App() {
         <Container fluid>
           <Row className="header-row">
             {/* Header will contain Head of site, logo, Home, About, Contact, Additional Reading */}
-            <Col id="logo">
-              <p>Logo</p>
+            <Col>
+              <h1>Logo</h1>
             </Col>
             <Col id="header">
               <h1>UDL for Teachers</h1>
             </Col>
             <Col id="nav">
+              <Nav />
+            </Col>
+          </Row>
+          <Row className="main">
+            <Col>
               <Routes>
-                <Route path="/" component={Home} />
-                {/* <Route path="/about" component={About} />
-                <Route path="/contact" component={Contact} />
-                <Route path="/additional-reading" component={AdditionalReading} /> */}
+                <Route path="/" element={<Home />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/contact" element={<Contact />} />
+                <Route
+                  path="/additional-reading"
+                  element={<AdditionalReading />}
+                />
               </Routes>
             </Col>
           </Row>
-          <Row className="jumboTron">
-            {/* Jumbotron contains a carousel of videos and a brief description of the site */}
-            <Jumbotron />
-          </Row>
-          <Row className="main"></Row>
           <Row className="footer"></Row>
         </Container>
       </Router>

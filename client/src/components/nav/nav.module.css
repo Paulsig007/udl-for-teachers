@@ -1,0 +1,15 @@
+.nav-tabs {
+  justify-content: space-around;
+  padding: 3vh;
+}
+
+.nav-item {
+  color: black;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.nav-item:hover {
+  text-decoration: none;
+  transform: scale(1.1);
+}

@@ -8,12 +8,7 @@ import YouTubeEmbed from "../../youTubeEmbed/YouTubeEmbed";
 
 const Slide1 = () => {
   return (
-    <Container
-      fluid
-      className="slideContainer"
-      id="slide1Container
-    "
-    >
+    <Container fluid className="slideContainer">
       <Row>
         <Col>
           <h1 className="jumbotronTitle">
@@ -26,7 +21,10 @@ const Slide1 = () => {
           </p>
         </Col>
         <Col>
-          <YouTubeEmbed embedId="ylkD02EjG4A" />
+          <YouTubeEmbed
+            embedId="ylkD02EjG4A"
+            embedTitle="Video: Introduction to Universal Design"
+          />
         </Col>
       </Row>
     </Container>

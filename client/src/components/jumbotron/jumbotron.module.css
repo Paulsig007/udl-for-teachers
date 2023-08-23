@@ -5,15 +5,32 @@
   background-color: var(--jumboBG);
   border: 1px solid black;
   display: flex;
+  width: 89%;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px black;
+  padding: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .jumbotronTitle {
+  font-size: 2.4rem;
   padding-top: 5rem;
   text-align: center;
 }
 
 /* ===Slide1=== */
-
+#slide1Text {
+  margin: 1vw;
+  margin-top: 3vh;
+}
 /* ===Slide2=== */
 
 /* ===Slide3=== */
+
+@media only screen and (max-width: 1096px) {
+  #slide1Text {
+    text-align: center;
+  }
+}

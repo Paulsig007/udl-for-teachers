@@ -3,6 +3,8 @@ import Carousel from "react-bootstrap/Carousel";
 import "./jumbotron.module.css";
 
 import Slide1 from "./slides/Slide1";
+import Slide2 from "./slides/Slide2";
+import Slide3 from "./slides/Slide3";
 
 function Jumbotron() {
   return (
@@ -11,20 +13,10 @@ function Jumbotron() {
         <Slide1 />
       </Carousel.Item>
       <Carousel.Item>
-        <image src="https://via.placeholder.com/800x400" alt="placeholder" />
-        <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </Carousel.Caption>
+        <Slide2 />
       </Carousel.Item>
       <Carousel.Item>
-        <image src="https://via.placeholder.com/800x400" alt="placeholder" />
-        <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
-        </Carousel.Caption>
+        <Slide3 />
       </Carousel.Item>
     </Carousel>
   );
