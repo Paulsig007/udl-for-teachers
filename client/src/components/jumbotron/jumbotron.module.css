@@ -21,16 +21,17 @@
 }
 
 /* ===Slide1=== */
-#slide1Text {
+.slideText {
   margin: 1vw;
   margin-top: 3vh;
+  font-size: 1.55rem;
 }
 /* ===Slide2=== */
 
 /* ===Slide3=== */
 
 @media only screen and (max-width: 1096px) {
-  #slide1Text {
+  .slideText {
     text-align: center;
   }
 }

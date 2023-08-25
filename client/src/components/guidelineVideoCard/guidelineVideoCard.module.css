@@ -1,0 +1,42 @@
+@import "../../constants/theme.css";
+
+.glvcContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--background);
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px black;
+  margin: 0 0 20px 0;
+  padding: 20px;
+  position: relative;
+  width: 100%;
+  max-width: 470px;
+}
+
+.glvc1,
+.glvc2,
+.glvc3 {
+  background-color: var(--representation);
+}
+
+.glvc4,
+.glvc5,
+.glvc6 {
+  background-color: var(--actionAndExpression);
+}
+
+.glvc7,
+.glvc8,
+.glvc9 {
+  background-color: var(--engagement);
+}
+
+/* #glvcContainer:hover {
+}
+
+#glvcNum {
+}
+
+#glvcTitle {
+} */

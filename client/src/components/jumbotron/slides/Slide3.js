@@ -12,13 +12,15 @@ const Slide3 = () => {
       <Row>
         <Col>
           <h1 className="jumbotronTitle">Navigating UDLforTeachers.com</h1>
-          <p id="slide1Text">
+          <p className="slideText">
             Learn how to implement the methods we have created that focus on
             developing expert learners.
           </p>
         </Col>
         <Col>
           <YouTubeEmbed
+            embedWidth="544"
+            embedHeight="306"
             embedId="Czw411nzElM"
             embedTitle="Video: Navigating UDL for Teachers.com"
           />

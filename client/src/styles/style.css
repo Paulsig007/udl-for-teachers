@@ -3,9 +3,22 @@
 }
 
 /* === style file imports === */
+/* components */
+@import "../components/guidelineVideoCard/guidelineVideoCard.module.css";
 @import "../components/jumbotron/jumbotron.module.css";
-@import "../constants/theme.css";
 @import "../components/nav/nav.module.css";
+@import "../components/techniqueCard/techniqueCard.module.css";
+
+/* constants */
+@import "../constants/theme.css";
+
+/* pages */
+@import "../pages/guideline/guideline.module.css";
+@import "../pages/home/about/about.module.css";
+@import "../pages/home/additionalReading/additionalReading.module.css";
+@import "../pages/home/contact/contact.module.css";
+@import "../pages/home//home/home.module.css";
+@import "../pages/techniquePost/techniquePost.module.css";
 
 #header {
   text-align: center;

@@ -12,13 +12,15 @@ const Slide2 = () => {
       <Row>
         <Col>
           <h1 className="jumbotronTitle">Case Studies in Universal Design</h1>
-          <p id="slide1Text">
+          <p className="slideText">
             See how Universal Design for Learning can be used in real-world
             classroom scenarios.
           </p>
         </Col>
         <Col>
           <YouTubeEmbed
+            embedWidth="544"
+            embedHeight="306"
             embedId="_Jzqfoqi1bk"
             embedTitle="Video: Case Studies in UDL"
           />

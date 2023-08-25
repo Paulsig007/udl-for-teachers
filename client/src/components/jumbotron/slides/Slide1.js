@@ -14,7 +14,7 @@ const Slide1 = () => {
           <h1 className="jumbotronTitle">
             An Introduction to Universal Design
           </h1>
-          <p id="slide1Text">
+          <p className="slideText">
             Get to know Universal Design for Learning with this brief
             introduction. The Universal Design for Learning guidelines are
             adapted with permission from CAST, 2018.
@@ -22,6 +22,8 @@ const Slide1 = () => {
         </Col>
         <Col>
           <YouTubeEmbed
+            embedWidth="544"
+            embedHeight="306"
             embedId="ylkD02EjG4A"
             embedTitle="Video: Introduction to Universal Design"
           />
