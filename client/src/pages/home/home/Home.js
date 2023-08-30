@@ -10,11 +10,6 @@ import Jumbotron from "../../../components/jumbotron/Jumbotron";
 import GuideLineVideoCard from "../../../components/guidelineVideoCard/GuidelineVideoCard";
 
 function Home() {
-  const rows = [];
-  for (let i = 0; i < guidelineVideos.length; i += 3) {
-    // this loop creates a grid of 3 cards per row
-    rows.push(guidelineVideos.slice(i, i + 3));
-  }
 
   return (
     <Container fluid>
@@ -29,25 +24,23 @@ function Home() {
           </div>
         </Col>
       </Row>
-      {/* create a grid of video cards */}
-      {rows.map((row, rowIndex) => (
-        <Row key={rowIndex}>
-          {row.map((video) => (
-            <Col key={video.guidelineNum} id="videosContainer" md={4}>
-              {/* map through guidelineVideos passing props into GuideLineVideoCard */}
-              <GuideLineVideoCard
-                guidelineInt={video.guidelineInt}
-                guidelineNum={video.guidelineNum}
-                guidelineTitle={video.guidelineTitle}
-                embedWidth={video.embedWidth}
-                embedHeight={video.embedHeight}
-                embedId={video.embedId}
-                embedTitle={video.embedTitle}
-              />
-            </Col>
+      <Row>
+        <Col id="videosContainer">
+          {guidelineVideos.map((video) => (
+          <GuideLineVideoCard
+            guidelineInt={video.guidelineInt}
+            guidelineNum={video.guidelineNum}
+            guidelineTitle={video.guidelineTitle}
+            embedWidth={video.embedWidth}
+            embedHeight={video.embedHeight}
+            embedId={video.embedId}
+            embedTitle={video.embedTitle}
+            guidelinePath={video.guidelinePath}
+            guidelineElement={video.guidelineElement}
+          />
           ))}
+        </Col>
         </Row>
-      ))}
     </Container>
   );
 }

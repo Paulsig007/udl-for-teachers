@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { Routes, Route, Link } from "react-router-dom";
 
 // components
 import YouTubeEmbed from "../youTubeEmbed/YouTubeEmbed";
@@ -12,6 +13,8 @@ function GuideLineVideoCard({
   embedHeight,
   embedId,
   embedTitle,
+  guidelinePath,
+  guidelineElement,
 }) {
   return (
     //   card for guidline video
@@ -23,7 +26,10 @@ function GuideLineVideoCard({
         embedTitle={embedTitle}
       />
       <h1 id="glvcNum">{guidelineNum}</h1>
-      <h2 id="glvcTitle">{guidelineTitle}</h2>
+      <Link to={guidelinePath}>Techniques that provide options for {guidelineTitle}</Link>
+      <Routes>
+        <Route path={guidelinePath} element={`<${guidelineElement}>`} />
+      </Routes>
     </div>
   );
 }
@@ -36,6 +42,8 @@ GuideLineVideoCard.propTypes = {
   embedHeight: PropTypes.string.isRequired,
   embedId: PropTypes.string.isRequired,
   embedTitle: PropTypes.string.isRequired,
+  guidelinePath: PropTypes.string.isRequired,
+  guidelineElement: PropTypes.string.isRequired,
 };
 
 export default GuideLineVideoCard;
