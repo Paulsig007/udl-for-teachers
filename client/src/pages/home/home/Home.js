@@ -1,7 +1,6 @@
 import React from "react";
-import Container from "react-bootstrap/esm/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+import Grid from "@mui/material/Grid";
+import styles from "./Home.module.css";
 
 import guidelineVideos from "../../../assets/guidelineVideos";
 
@@ -12,21 +11,17 @@ import GuideLineVideoCard from "../../../components/guidelineVideoCard/Guideline
 function Home() {
 
   return (
-    <Container fluid>
-      <Row className="jumboTron">
+    <Grid container spacing={2}>
+      <Grid item xs={12}>
         {/* Jumbotron contains a carousel of videos and a brief description of the site */}
         <Jumbotron />
-      </Row>
-      <Row>
-        <Col>
-          <div>
-            <h1 id="homeTitle">Universal Design for Learning Guidelines</h1>
-          </div>
-        </Col>
-      </Row>
-      <Row>
-        <Col id="videosContainer">
+      </Grid>
+      <Grid item xs={12}>
+            <h1 className={styles.homeTitle}>Universal Design for Learning Guidelines</h1>
+      </Grid>
+      <Grid container spacing={2}>
           {guidelineVideos.map((video) => (
+          <Grid item sm={12} md={6} lg={4} className={styles.videosContainer} key={video.guidelineNum}>
           <GuideLineVideoCard
             guidelineInt={video.guidelineInt}
             guidelineNum={video.guidelineNum}
@@ -38,11 +33,12 @@ function Home() {
             guidelinePath={video.guidelinePath}
             guidelineElement={video.guidelineElement}
           />
+          </Grid>
           ))}
-        </Col>
-        </Row>
-    </Container>
+        </Grid>
+        </Grid>
   );
 }
 
 export default Home;
+

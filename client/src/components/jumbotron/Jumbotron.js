@@ -1,23 +1,25 @@
 import React, { useState } from "react";
 import Carousel from "react-bootstrap/Carousel";
-import "./jumbotron.module.css";
 
-import Slide1 from "./slides/Slide1";
-import Slide2 from "./slides/Slide2";
-import Slide3 from "./slides/Slide3";
+import slideData from "../../assets/slideData";
+
+import Slide from "../slide/Slide";
+
 
 function Jumbotron() {
   return (
     <Carousel interval={null}>
+        {slideData.map((slide) => (
       <Carousel.Item>
-        <Slide1 />
+          <Slide
+            key={slide.slideTitle}
+            slideTitle={slide.slideTitle}
+            slideText={slide.slideText}
+            embedId={slide.embedId}
+            embedTitle={slide.embedTitle}
+          />
       </Carousel.Item>
-      <Carousel.Item>
-        <Slide2 />
-      </Carousel.Item>
-      <Carousel.Item>
-        <Slide3 />
-      </Carousel.Item>
+        ))}
     </Carousel>
   );
 }

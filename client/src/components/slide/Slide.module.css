@@ -1,0 +1,25 @@
+@import "../../constants/theme.css";
+
+.slideContainer {
+    background-color: var(--jumboBG);
+    border: 1px solid black;
+    display: flex;
+    width: 89%;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px black;
+    padding: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-bottom: 1rem;
+  }
+  .slideText {
+    margin: 1vw;
+    margin-top: 3vh;
+    font-size: 1.55rem;
+  }
+  
+  @media only screen and (max-width: 1096px) {
+    .slideText {
+      text-align: center;
+    }
+  }
