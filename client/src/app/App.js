@@ -8,7 +8,6 @@ import {
 } from "@apollo/client";
 // import { setContext } from "@apollo/client/link/context";
 import Container from "@mui/material/Container";
-import Grid from "@mui/material/Grid";
 import styles from "./App.module.css";
 
 // pages
@@ -18,7 +17,7 @@ import Contact from "../pages/home/contact/Contact";
 import AdditionalReading from "../pages/home/additionalReading/AdditionalReading";
 
 // components
-import Nav from "../components/nav/Nav";
+import Header from "../components/Header/Header";
 
 // create our main graphql endpoint
 const httpLink = createHttpLink({
@@ -36,18 +35,11 @@ function App() {
     <ApolloProvider client={client}>
       <Router>
         <Container maxWidth='xl'>
-          <Grid container spacing={2}>
-          <Grid className={styles.headerRow}>
-            {/* Header will contain Head of site, logo, Home, About, Contact, Additional Reading */}
-              <h1>Logo</h1>
-          </Grid>
-          <Grid>
-              <h1 className={styles.header}>UDL for Teachers</h1>
-          </Grid>
-          <Grid>
-              <Nav />
-          </Grid>
-          <Grid>
+          <div container spacing={2}>
+            <div>
+              <Header />
+            </div>
+            <div>
               <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
@@ -57,11 +49,11 @@ function App() {
                   element={<AdditionalReading />}
                 />
               </Routes>
-          </Grid>
-          <Grid>
+            </div>
+            <div>
               <p>footer</p>
-          </Grid>
-          </Grid>
+            </div>
+          </div>
         </Container>
       </Router>
     </ApolloProvider>

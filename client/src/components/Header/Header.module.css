@@ -1,0 +1,47 @@
+.header{
+  display: flex;
+}
+
+.logo{
+  width: 90%;
+  margin-top: 19%;
+}
+
+.headerText {
+  text-align: center;
+  margin-top: 7%;
+  margin-right: 30%;
+  font-size: 6vw;
+  font-weight: bold;
+}
+
+.navTabs{
+  
+}
+
+@media screen and (max-width: 900px) {
+  .header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo{
+    width: 80%;
+    margin-top: 0%;
+  }
+  .headerText {
+    text-align: center;
+    margin-top: 0%;
+    margin-right: 0%;
+    font-size: 300%;
+    font-weight: bold;
+  }
+  .navTabs{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0%;
+    margin-right: 0%;
+  }
+}
+  

@@ -1,22 +1,32 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import styles from "./Nav.module.css";
+import Grid from "@mui/material/Grid";
 
 function Nav() {
   return (
-    <ul className="nav nav-tabs">
-      <Link to={"/"} className="nav-item">
+    <Grid container className={styles.navTabs}>
+      <Grid item xs={3}>
+      <Link to={"/"} className={styles.navItem}>
         Home
       </Link>
-      <Link to={"/about"} className="nav-item">
+      </Grid>
+      <Grid item xs={3}>
+      <Link to={"/about"} className={styles.navItem}>
         About
       </Link>
-      <Link to={"/contact"} className="nav-item">
+      </Grid>
+      <Grid item xs={3}>
+      <Link to={"/contact"} className={styles.navItem}>
         Contact
       </Link>
-      <Link to={"/additional-reading"} className="nav-item">
+      </Grid>
+      <Grid item xs={3}>
+      <Link to={"/additional-reading"} className={styles.navItem}>
         Additional Reading
       </Link>
-    </ul>
+      </Grid>
+    </Grid>
   );
 }
 

@@ -1,15 +1,17 @@
-.nav-tabs {
-  justify-content: space-around;
+.navTabs {
+  display: flex;
   padding: 3vh;
+  text-align: center;
 }
 
-.nav-item {
+.navItem {
   color: black;
-  font-size: 1.2rem;
-  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;;
 }
 
-.nav-item:hover {
-  text-decoration: none;
+.navItem:hover {
+  display: inline-block;
   transform: scale(1.1);
 }
