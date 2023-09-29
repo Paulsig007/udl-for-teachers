@@ -3,7 +3,6 @@ import { useParams } from "react-router-dom";
 
 function Guideline() {
   const { currGuideline } = useParams();
-  console.log("ENTERED GUIDELINE PAGE ====================================");
   return (
     <div>
       <h1>This is the page for guideline: {currGuideline}</h1>
