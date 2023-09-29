@@ -15,6 +15,8 @@ import Home from "../pages/home/home/Home";
 import About from "../pages/home/about/About";
 import Contact from "../pages/home/contact/Contact";
 import AdditionalReading from "../pages/home/additionalReading/AdditionalReading";
+// import Perception from "../pages/guideline/Perception";
+import Guideline from "../pages/guideline/Guideline";
 
 // components
 import Header from "../components/Header/Header";
@@ -34,7 +36,7 @@ function App() {
     // wrap our app in the ApolloProvider component and pass in our client
     <ApolloProvider client={client}>
       <Router>
-        <Container maxWidth='xl'>
+        <Container maxWidth="xl">
           <div container spacing={2}>
             <div>
               <Header />
@@ -47,6 +49,10 @@ function App() {
                 <Route
                   path="/additional-reading"
                   element={<AdditionalReading />}
+                />
+                <Route
+                  path="/guideline/:currGuideline"
+                  element={<Guideline />}
                 />
               </Routes>
             </div>
@@ -61,4 +67,3 @@ function App() {
 }
 
 export default App;
-

@@ -1,8 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Routes, Route, Link } from "react-router-dom";
+// import { Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Grid from "@mui/material/Grid";
 import styles from "./GuidelineVideoCard.module.css";
+// import Perception from "../../pages/guideline/Perception";
+import Guideline from "../../pages/guideline/Guideline";
 
 // components
 import YouTubeEmbed from "../youTubeEmbed/YouTubeEmbed";
@@ -20,23 +24,33 @@ function GuideLineVideoCard({
 }) {
   return (
     //   card for guidline video
-    <Grid container className={`${styles.glvcContainer} ${styles[guidelineInt]}`}>
-    <Grid item xs={12} >
-      <YouTubeEmbed
-        embedWidth={embedWidth}
-        embedHeight={embedHeight}
-        embedId={embedId}
-        embedTitle={embedTitle}
-      />
-    </Grid>
-    <Grid item xs={12}>
-      <h1>{guidelineNum}</h1>
-    </Grid>
-    <Grid item xs={12}>
-      <Link className={styles.techniqueLink} to={guidelinePath}>Techniques that provide options for {guidelineTitle}</Link>
-    </Grid>
+    <Grid
+      container
+      className={`${styles.glvcContainer} ${styles[guidelineInt]}`}
+    >
+      <Grid item xs={12}>
+        <YouTubeEmbed
+          embedWidth={embedWidth}
+          embedHeight={embedHeight}
+          embedId={embedId}
+          embedTitle={embedTitle}
+        />
+      </Grid>
+      <Grid item xs={12}>
+        <h1>{guidelineNum}</h1>
+      </Grid>
+      <Grid item xs={12}>
+        <Link
+          className={styles.techniqueLink}
+          to={"/guideline" + guidelinePath}
+        >
+          Techniques that provide options for {guidelineTitle}
+        </Link>
+      </Grid>
       <Routes>
-        <Route path={guidelinePath} element={`<${guidelineElement}>`} />
+        {/* I'm not sure if the method below is a valid way of doing things... Something is going on with picking up the "guidelineElement" in here
+        I think it's because it's interpreting "guidelineElement" as a string and not as an actual element  */}
+        {/* <Route path={`/guidline/${guidelinePath}`} element={<Guideline />} /> */}
       </Routes>
     </Grid>
   );

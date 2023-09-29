@@ -8,7 +8,7 @@ const guidelineVideos = [
     embedId: "FptsfV8cC3U",
     embedTitle: "Video: Options for Perception",
     guidelinePath: "/perception",
-    guidelineElement:"Perception", 
+    guidelineElement: "Perception",
   },
   {
     guidelineInt: "glvc2",
@@ -19,7 +19,7 @@ const guidelineVideos = [
     embedId: "p5YupIXXZKA",
     embedTitle: "Video: Options for Language,Symbols and Notation",
     guidelinePath: "/language-symbols-notation",
-    guidelineElement:"LanguageSymbolsNotation", 
+    guidelineElement: "LanguageSymbolsNotation",
   },
   {
     guidelineInt: "glvc3",
@@ -30,7 +30,7 @@ const guidelineVideos = [
     embedId: "G1dNKeDvT4M",
     embedTitle: "Video: Options for Comprehension",
     guidelinePath: "/comprehension",
-    guidelineElement:"Comprehension", 
+    guidelineElement: "Comprehension",
   },
   {
     guidelineInt: "glvc4",
@@ -41,7 +41,7 @@ const guidelineVideos = [
     embedId: "uyOGnFNlVPU",
     embedTitle: "Video: Options for Physical Action",
     guidelinePath: "/physical-action",
-    guidelineElement:"PhysicalAction", 
+    guidelineElement: "PhysicalAction",
   },
   {
     guidelineInt: "glvc5",
@@ -52,7 +52,7 @@ const guidelineVideos = [
     embedId: "7Gxen6g9Dl8",
     embedTitle: "Video: Options for Expression and Communication",
     guidelinePath: "/expression-communication",
-    guidelineElement:"ExpressionCommunication", 
+    guidelineElement: "ExpressionCommunication",
   },
   {
     guidelineInt: "glvc6",
@@ -63,7 +63,7 @@ const guidelineVideos = [
     embedId: "94UHSdkRvGQ",
     embedTitle: "Video: Options for Executive Function",
     guidelinePath: "/executive-function",
-    guidelineElement:"ExecutiveFunction", 
+    guidelineElement: "ExecutiveFunction",
   },
   {
     guidelineInt: "glvc7",
@@ -74,7 +74,7 @@ const guidelineVideos = [
     embedId: "vSJXJKHFp0A",
     embedTitle: "Video: Options for Recruiting Interest",
     guidelinePath: "/recruiting-interest",
-    guidelineElement:"RecruitingInterest", 
+    guidelineElement: "RecruitingInterest",
   },
   {
     guidelineInt: "glvc8",
@@ -85,7 +85,7 @@ const guidelineVideos = [
     embedId: "QTmb6leqX94",
     embedTitle: "Video: Options for Sustaining Effort and Persistence",
     guidelinePath: "/sustaining-effort",
-    guidelineElement:"SustainingEffort", 
+    guidelineElement: "SustainingEffort",
   },
   {
     guidelineInt: "glvc9",
@@ -96,7 +96,7 @@ const guidelineVideos = [
     embedId: "fK60uIRTuKg",
     embedTitle: "Video: Options for Self-Regulation",
     guidelinePath: "/self-regulation",
-    guidelineElement:"SelfRegulation",
+    guidelineElement: "SelfRegulation",
   },
 ];
 
