@@ -47,11 +47,6 @@ function GuideLineVideoCard({
           Techniques that provide options for {guidelineTitle}
         </Link>
       </Grid>
-      <Routes>
-        {/* I'm not sure if the method below is a valid way of doing things... Something is going on with picking up the "guidelineElement" in here
-        I think it's because it's interpreting "guidelineElement" as a string and not as an actual element  */}
-        {/* <Route path={`/guidline/${guidelinePath}`} element={<Guideline />} /> */}
-      </Routes>
     </Grid>
   );
 }
