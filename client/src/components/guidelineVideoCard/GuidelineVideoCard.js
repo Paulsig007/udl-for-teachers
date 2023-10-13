@@ -1,12 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
-// import { Routes, Route, Link } from "react-router-dom";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { Link } from "react-router-dom";
 import Grid from "@mui/material/Grid";
 import styles from "./GuidelineVideoCard.module.css";
-// import Perception from "../../pages/guideline/Perception";
-import Guideline from "../../pages/guideline/Guideline";
 
 // components
 import YouTubeEmbed from "../youTubeEmbed/YouTubeEmbed";

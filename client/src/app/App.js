@@ -51,7 +51,7 @@ function App() {
                   element={<AdditionalReading />}
                 />
                 <Route
-                  path="/guideline/:currGuideline"
+                  path="/guideline/:currGuidelinePath"
                   element={<Guideline />}
                 />
               </Routes>
